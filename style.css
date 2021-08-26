@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #67E5CD , #4A7FE5);
+}
+
+section{
+  margin-top: 25vh;
+  height: auto;
+  width: 700px;
+  background-color: #FDFFFE;
+  border-radius: .5rem;
+  padding: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  animation: slide;
+  animation-duration: 0.5s;
+}
+
+.titulo{
+  text-align: center;
+  padding: .5rem;
+}
+
+.titulo h1{
+  font-weight: normal;
+}
+
+.inserirTarefa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+#escreverTarefa{
+  flex-grow: 2;
+  margin-left: .5rem;
+  padding: .5rem;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  background-color: #F5F5F5;
+}
+
+.tarefas{
+  border-radius: .25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  opacity:.8;
+}
+
+.done{
+  text-decoration: line-through;
+}
+
+.divDone{
+  opacity: 0.3;
+}
+.tarefas:hover{
+  opacity: 1;
+  background-color: rgba(245, 245, 245, 0.5);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#checkbox, #btnRemover{
+  margin: .5rem;
+}
+
+
+#btnRemover{
+  padding: .5rem;
+}
+
+#btnRemover{
+  border: #FF707E solid 1px;
+  border-radius: .25rem;
+  background-color: white;
+  color: #FF707E;
+  cursor: pointer;
+}
+
+#btnRemover:hover{
+  background-color:#FF707E;
+  color: white;
+}
+
+#btnRemover:active{
+  transform: translateX(1px);
+  transform: translateY(1px);
+}
+#item{
+  flex-grow: 2;
+}
+
+#btnAdicionar{
+  border: #00D28C solid 1px;
+  border-radius: .25rem;
+  background-color: white;
+  color: #00D28C;
+  cursor: pointer;
+  padding: .5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+#btnAdicionar:hover{
+  background-color: #00D28C;
+  color: white;
+}
+
+#btnAdicionar:active{
+  transform: translateX(1px);
+  transform: translateY(1px);
+}
+
+@keyframes slide{
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }to{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
