@@ -15,7 +15,6 @@ campoNovaTarefa.addEventListener('keydown', (e) => {
   } 
 })
 
-
 function adicionar(evento) {
   evento.preventDefault()
   //criaçao de elemento
